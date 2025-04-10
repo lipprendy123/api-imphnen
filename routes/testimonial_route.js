@@ -9,4 +9,4 @@ testiRoute.post('/testimoni', testimonialLimiter ,testimonialController.createTe
 testiRoute.put('/testimoni/:id', testimonialController.updateTestimonial)
 testiRoute.delete('/testimoni/:id', testimonialController.deleteTestimonial)
 
-module.exports = testiRoute
+module.exports = testiRoute 

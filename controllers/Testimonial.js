@@ -4,7 +4,7 @@ const Testimonial = require('../models/testimonial_model')
 const testimonialController = {
     async getTestimonial(req, res) {
         try {
-            const data = await Testimonial.find().select("name message")
+            const data = await Testimonial.find().select("name message").sort({createdAt: -1})
 
             return res.status(200).json({
                 success: true,
